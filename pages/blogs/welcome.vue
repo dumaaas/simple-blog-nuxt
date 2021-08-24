@@ -215,6 +215,16 @@ section {
     padding: 120px 20px;
     max-width: 78ch !important;
 
+    a {
+        color: #2EC997;
+
+        &:hover {
+            color: #fff;
+            text-decoration: underline;
+            transition: all .3 ease-in-out;
+        }
+    }
+
     p {
       font-size: 18px;
       line-height: 26px;

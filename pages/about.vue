@@ -13,8 +13,8 @@
         <p>
           Hey, I'm Marko! I made this template. If you're reading this, you
           should probably be changing the content on this page. You can do that
-          in <code>pages/about/index.vue.
-              </code>
+          in <code>pages/about/index.vue
+              </code>.
         </p>
         <p>
           Want to change the image above? (Hopefully!) Add your own in <code>

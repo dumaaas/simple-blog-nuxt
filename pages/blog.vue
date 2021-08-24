@@ -5,10 +5,7 @@
         <h2>Blog Posts</h2>
       </div>
       <div class="blog-content">
-        <nuxt-link
-          v-for="blog in blogs"
-          :key="blog.title"
-          :to="`/items/${blog.id}`"
+        <nuxt-link v-for="blog in blogs" :key="blog.title" :to="`/blogs/${blog.page}`"
           ><div class="blog-content__item">
             <div class="blog-content__item-top">
               <img :src="require(`@/assets/images/${blog.img}`)" alt="" />
@@ -31,21 +28,21 @@ export default {
     return {
       blogs: [
         {
-          id: 1,
+          page: "welcome",
           title: "How to Blog",
           date: "MARCH 2021",
           content: "Gettin started with the Nuxt Blog Starter template.",
           img: "howToBlog.jpg",
         },
         {
-          id: 2,
+          page: "dogs",
           title: "Dogs",
           date: "JANUARY 2021",
           content: "Dogs are the best animal. Here's why.",
           img: "dogs.jpg",
         },
         {
-          id: 3,
+          page: "cats",
           title: "Cats",
           date: "DECEMBER 2020",
           content: "Cats are the second best animal. Here's why.",
@@ -87,8 +84,8 @@ section {
     gap: 20px;
     padding-bottom: 130px;
     @include breakpoint($xs) {
-        flex-direction: column;
-      }
+      flex-direction: column;
+    }
     a {
       width: 33.33%;
       @include breakpoint($xs) {

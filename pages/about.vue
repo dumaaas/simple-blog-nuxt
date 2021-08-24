@@ -39,7 +39,7 @@ section {
 }
 .about {
   margin: 0 auto;
-  padding: 180px 20px 0 20px;
+  padding: 120px 20px 0 20px;
   max-width: 78ch !important;
   &-title {
     display: flex;

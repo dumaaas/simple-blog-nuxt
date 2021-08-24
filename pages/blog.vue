@@ -42,14 +42,14 @@ export default {
           title: "Dogs",
           date: "JANUARY 2021",
           content: "Dogs are the best animal. Here's why.",
-          img: "howToBlog.jpg",
+          img: "dogs.jpg",
         },
         {
           id: 3,
           title: "Cats",
           date: "DECEMBER 2020",
           content: "Cats are the second best animal. Here's why.",
-          img: "howToBlog.jpg",
+          img: "cats.jpg",
         },
       ],
     };
@@ -64,7 +64,7 @@ section {
 }
 .blog {
   margin: 0 auto;
-  padding: 180px 20px 0 20px;
+  padding: 120px 20px 0 20px;
   max-width: 78ch !important;
   &-title {
     display: flex;

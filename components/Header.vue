@@ -28,6 +28,7 @@ header {
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 1;
   .content {
     display: flex;
     justify-content: space-between;

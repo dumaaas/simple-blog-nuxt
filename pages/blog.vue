@@ -58,9 +58,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/sass/abstracts/_mixins.scss";
+
 section {
   height: 100vh;
   background-color: #1e1e1e;
+  overflow-y: auto;
 }
 .blog {
   margin: 0 auto;
@@ -82,8 +85,15 @@ section {
     display: flex;
     padding-top: 50px;
     gap: 20px;
+    padding-bottom: 130px;
+    @include breakpoint($xs) {
+        flex-direction: column;
+      }
     a {
       width: 33.33%;
+      @include breakpoint($xs) {
+        width: 100%;
+      }
     }
     &__item {
       align-self: stretch;
@@ -93,13 +103,15 @@ section {
       height: 100%;
       transform: translateX(0px) translateY(0px);
       transition: transform 1s ease 0s;
-
       img {
         width: 100%;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         object-fit: cover;
         height: 97px;
+        @include breakpoint($xs) {
+          height: 120px;
+        }
       }
 
       &-bottom {
